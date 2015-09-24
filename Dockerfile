@@ -37,4 +37,6 @@ EXPOSE 5050
 #########################################
 
 ADD install.sh /tmp/
-RUN chmod +x /tmp/install.sh && /tmp/install.sh && rm /tmp/install.sh
+RUN chmod +x /tmp/install.sh
+RUN /tmp/install.sh 
+RUN rm /tmp/install.sh
